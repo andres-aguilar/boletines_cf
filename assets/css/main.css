@@ -4,6 +4,23 @@ html {
 h1{
   font-family: 'Concert One', cursive;
 }
+a {
+  text-decoration: none;
+}
+table {
+  width: 100%;
+  border-spacing: 0px;
+}
+td, th {
+  padding: 1em;
+  text-align: left;
+}
+table tr:nth-child(even){
+  background-color: #EEF;
+}
+.fa-star {
+  color: #FFC400;
+}
 .container {
   background: #56CCF2;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,4 +36,8 @@ h1{
   width: 100%;
   height: 100%;
   background-color: #FFF;
+}
+.paragraph {
+  line-height: 1.3em;
+  font-weight: 200;
 }
