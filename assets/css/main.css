@@ -7,6 +7,9 @@ h1{
 a {
   text-decoration: none;
 }
+a:hover {
+  opacity: 0.7;
+}
 table {
   width: 100%;
   border-spacing: 0px;
@@ -36,12 +39,34 @@ table tr:nth-child(even){
   width: 100%;
   height: 100%;
   background-color: #FFF;
-  padding: 10px;
+  padding: 1.5em;
   box-shadow: 1px 5px 6px #666;
   border-radius: 5px;
+  position: relative;
+}
+.main-title{
+  text-align: center;
+}
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.close {
+  height: 40px;
+  width: 40px;
+  color: #FFF;
+  border-radius: 50%;
+  background-color: #2F80ED;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .paragraph {
   line-height: 1.3em;
+  font-size: 1.2em;
   font-weight: 200;
 }
 .title-item {
@@ -53,4 +78,14 @@ table tr:nth-child(even){
   padding: 10px;
   color: #FFF;
   border-radius: 2px;
+  margin-right: 0.5em;
+}
+.address {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.main-image {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
 }
