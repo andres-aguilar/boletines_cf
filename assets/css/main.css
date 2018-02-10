@@ -21,6 +21,9 @@ td, th {
 table tr:nth-child(even){
   background-color: #EEF;
 }
+img {
+  max-width: 100%;
+}
 .fa-star {
   color: #FFC400;
 }
@@ -35,15 +38,13 @@ table tr:nth-child(even){
 }
 .content {
   max-width: 960px;
-  max-height: 500px;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   background-color: #FFF;
   padding: 1.5em;
   box-shadow: 1px 5px 6px #666;
   border-radius: 5px;
   position: relative;
-  overflow: scroll;
 }
 .main-title{
   text-align: center;
@@ -91,4 +92,27 @@ table tr:nth-child(even){
   float: left;
   margin-right: 1em;
   height: 250px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 1em;
+  }
+  td {
+    display: block;
+    width: 100%;
+  }
+  td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2F80ED;
+  }
+  th {
+    display: none;
+  }
+}
+@media (min-height: 550px) {
+  .content {
+    height: 550px;
+  }
 }
