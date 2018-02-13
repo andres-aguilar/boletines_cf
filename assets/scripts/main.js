@@ -1,8 +1,26 @@
 // console.log("Hola mundo");
 
 // Retorna todos los elementos encontrados en una lista
-let links = document.querySelectorAll("a");
+let btnsClose = document.querySelectorAll(".close");
 
-links.forEach(function(link){
-  console.log(link);
+btnsClose.forEach(function(btnClose){
+  // console.log(btnClose);
+  btnClose.addEventListener('click', function(event){
+    event.preventDefault(); // evita la accion por dafault
+
+    let content = document.querySelector(".content");
+
+    // Quitar la clase de la animacion
+    content.classList.remove("zoomIn");
+    content.classList.remove("animated");
+
+    // Poner las nuevas clases de animacion
+    content.classList.add("zoomOut");
+    content.classList.add("animated");
+
+    // Redireccionando al index despues de 1s
+    setTimeout(function(){
+      location.href = "/";
+    }, 800);
+  });
 });
