@@ -4,7 +4,7 @@
 let btnsClose = document.querySelectorAll(".close");
 
 btnsClose.forEach(function(btnClose){
-  // console.log(btnClose);
+  
   btnClose.addEventListener('click', function(event){
     event.preventDefault(); // evita la accion por dafault
 
@@ -18,7 +18,7 @@ btnsClose.forEach(function(btnClose){
     content.classList.add("zoomOut");
     content.classList.add("animated");
 
-    // Redireccionando al index despues de 1s
+    // Redireccionando al index despues de 0.8s
     setTimeout(function(){
       location.href = "/";
     }, 800);
