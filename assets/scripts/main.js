@@ -4,7 +4,7 @@
 let btnsClose = document.querySelectorAll(".close");
 
 btnsClose.forEach(function(btnClose){
-  
+
   btnClose.addEventListener('click', function(event){
     event.preventDefault(); // evita la accion por dafault
 
@@ -20,7 +20,7 @@ btnsClose.forEach(function(btnClose){
 
     // Redireccionando al index despues de 0.8s
     setTimeout(function(){
-      location.href = "/";
+      location.href = "/boletines/";
     }, 800);
   });
 });
